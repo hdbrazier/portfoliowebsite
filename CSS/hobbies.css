@@ -1,0 +1,123 @@
+*{
+    padding: 50;
+    margin: 50;  
+}
+body{
+    background-color: seashell;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    margin: 20px;
+}
+nav{
+    width: 100%;
+    background-color: slategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    border-bottom: 5px solid black;
+}
+nav ul li{
+    color: seashell;
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+}
+nav ul li a{
+    color: seashell;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:visited{
+    text-decoration-line: underline;
+}
+nav ul li a:hover{
+    color: lightblue;
+    transition: .4s;
+    text-decoration-line: underline;
+}
+.hobbies{
+    color: slategray;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
+}
+h3{
+    color: slategray;
+    margin-bottom: 30px;
+}
+.list{
+    color: slategray;
+    padding-bottom: 20px;
+}
+p{
+    color: slategray
+}
+.fling-minislide{
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fling-minislide img{
+    position: absolute;
+    animation: fling-minislide 25s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+}
+@keyframes fling-minislide{25%{opacity: 1;}40%{opacity:0;}}
+.fling-minislide img:nth-child(5){animation-delay: 5s;}
+.fling-minislide img:nth-child(4){animation-delay: 10s;}
+.fling-minislide img:nth-child(3){animation-delay: 15s;}
+.fling-minislide img:nth-child(2){animation-delay: 20s;}
+.fling-minislide img:nth-child(1){animation-delay: 25s;}
+.contact h2{
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+    text-decoration: underline seashell;
+}
+.contact{
+    text-align: center;
+    color: seashell;
+}
+.contact ul{
+    list-style: none;
+}
+footer{
+    background-color: slategray;
+    width: 100%;
+    color: seashell;
+    text-align: center;
+    border-top: 5px solid black;
+}
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram{
+    background: #125688;
+    color: white;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+.end{
+    color: seashell;
+}
